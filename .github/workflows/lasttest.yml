@@ -1,0 +1,8 @@
+stages:
+  - test
+
+selenium_tests:
+  image: maven:3.8.4-openjdk-17
+  stage: test
+  script:
+    - mvn test
